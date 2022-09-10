@@ -2,7 +2,7 @@ import javax.annotation.processing.Generated;
 
 public class Employee {
 
-    int id;
+    static int id;
     String lastName;
     String firstName;
     String middleName;
@@ -11,11 +11,16 @@ public class Employee {
 
 
     public Employee(String lastName, String firstName, String middleName, int department, int salary) {
+        id++;
         this.lastName = lastName;
         this.firstName = firstName;
         this.middleName = middleName;
         this.department = department;
         this.salary = salary;
+    }
+
+    public static int getId() {
+        return id;
     }
 
     public String getLastName() {
@@ -58,24 +63,5 @@ public class Employee {
                 '}';
     }
 
-    public getSumSalary() {
-        for (int i = 0; i < ; i++) {
-
-        }
-    }
-
-    int minSalary = 0;
-    public minSalary() {
-        for (int i = 0; i < ; i++) {
-
-        }
-
-    }
-
-    public maxSalary() {
-        for (int i = 0; i < ; i++) {
-
-        }
-    }
 }
 

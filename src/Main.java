@@ -1,7 +1,41 @@
 public class Main {
 
-    Employee[] employees = new Employee[10];
+    static int id;
+
     public static void main(String[] args) {
+        Employee[] employees = new Employee[10];
+        employees[0] = new Employee("Попов", "Петр", "Петрович", 1, 10000);
+        employees[1] = new Employee("Семенов", "Александр", "Петрович", 5, 15000);
+        employees[2] = new Employee("Петухов", "Павел", "Семенович", 4, 13000);
+        employees[3] = new Employee("Совельев", "Григорий", "Юрьевич", 3, 20000);
+        employees[4] = new Employee("Сухоруко", "Василий", "Елисеевич", 2, 14000);
+        employees[5] = new Employee("Понов", "Антон", "Петрович", 1, 16000);
+        employees[6] = new Employee("Кипрюшин", "Геннадий", "Геннадьевич", 1, 30000);
+        employees[7] = new Employee("Соловьева", "София", "Руслвновна", 2, 40000);
+        employees[8] = new Employee("Соплин", "Федор", "Илларионович", 3, 60000);
+        employees[9] = new Employee("Капушкина", "Ольга", "Михайловна", 4, 100000);
+        System.out.println(employees[1].toString());
 
     }
+    public static getSumSalary() {
+
+        }
+        return sum;
+    }
+
+    int minSalary = 0;
+
+    public minSalary() {
+        for (int i = 0; i <; i++) {
+            minSalary += Employee.getSalary();
+        }
+
+    }
+
+    public maxSalary() {
+        for (int i = 0; i <; i++) {
+
+        }
+    }
+
 }
