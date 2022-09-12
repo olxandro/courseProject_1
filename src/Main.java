@@ -67,7 +67,7 @@ public class Main {
 
     public static void getFIO() {
         for (Employee employee : employees) {
-            System.out.println("ФИО сотрудника " + employee.id + ": " + employee.lastName + " " + employee.firstName + " " + employee.middleName);
+            System.out.println("ФИО сотрудника " + employee.getId() + ": " + employee.getLastName() + " " + employee.getFirstName() + " " + employee.getMiddleName());
         }
     }
 

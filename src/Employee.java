@@ -2,13 +2,13 @@ import javax.annotation.processing.Generated;
 
 public class Employee {
 
-    int id;
-    static int count;
-    String lastName;
-    String firstName;
-    String middleName;
-    int department;
-    public int salary;
+    final private int id;
+    private static int count = 0;
+    final private String lastName;
+    final private String firstName;
+    final private String middleName;
+    private int department;
+    private int salary;
 
 
     public Employee(String lastName, String firstName, String middleName, int department, int salary) {
@@ -60,7 +60,7 @@ public class Employee {
                 ", firstName: '" + firstName +
                 ", middleName: '" + middleName +
                 ", department: " + department +
-                ", salary: " + salary ;
+                ", salary: " + salary;
     }
 
 }
